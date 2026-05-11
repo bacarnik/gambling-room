@@ -1,11 +1,13 @@
 <?php
     session_start();
     $users = [];
-    if(isset($_POST['submit'])){
-        $users = [['username1' => $_POST['username1']], ['username2' => $_POST['username2']], ['username3' => $_POST['username3']]];
+    if(isset($_POST['login'])){
+        $_SESSION['users'] = [
+            $_POST['username1'],
+            $_POST['username2'],
+            $_POST['username3']
+        ];
     }  
-
-    $_SESSION['users'] = $users;
 ?>
 
 <!DOCTYPE html>
@@ -39,7 +41,7 @@
                     </div>
                 </div>
 
-                <button type="submit" id="play-button" >Play</button>
+                <button type="submit" name="login" id="play-button" >Play</button>
             </form>
         </div>
     </div>

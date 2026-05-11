@@ -58,6 +58,7 @@ body {
                         IGRA
 ============================================================
  */
+
 #users-container {
     width: 100%;
     height: auto;
@@ -70,6 +71,7 @@ body {
  
 .user-card{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 33.33%;
@@ -79,4 +81,34 @@ body {
 
 hr{
     width: 100%;
+}
+
+#img-main{
+    margin: 20px auto;
+    min-height: 400px;
+}
+
+.img-small{
+    margin: 10px 0 10px;
+}
+
+form{
+    width: 100%;
+    height: auto;
+}
+#roll-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#roll-button:hover {
+    background-color: #0072ec;
+    transform: translateY(-2px);
 }
