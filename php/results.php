@@ -57,6 +57,10 @@
             </div>
             
         </div>
+        <div class="info-container">
+            <div class="info-icon">ⓘ</div>
+            <div class="info-text">Nik Bačar 4.RB</div>
+        </div>
     </div>
 </body>
 </html>
